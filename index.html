@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Css animation -->
+    <link rel="stylesheet" href="./AnimPort.css">
+    <!-- CSS Responsive -->
+    <!-- <link rel="stylesheet" href="../CSS/Responsive.css"> -->
+
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="./port.css">
+
+    <!-- CDN icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS link -->
+    <script defer src="./port.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+
+        <nav id="nav-bar">
+            <h1 class="logo"><span style="color: red;">MY </span>Portfolio...</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#skill-section">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./SAGAR KHAMBE 2024 RESUME.pdf" target="_blank"><button>Download CV</button></a>
+                </li>
+
+                <!-- Side Bar Menue -->
+                <div id="toggle-btn">
+                    <a href=""> <i id="hamburger" class="fa fa-bars toggleicon" aria-hidden="true"></i></a>
+                </div>
+            </ul>
+        </nav>
+        <div class="dropdown-menu">
+            <li><a href="home">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#skill-section">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="../files/SAGAR KHAMBE 2024 RESUME.pdf" target="_blank"><button onclick="">Download
+                        CV</button></a></li>
+
+        </div>
+        <div class="mode-moon" id="mode"><i id="mode-btn" class="fa-solid fa-moon"></i></div>
+        <i></i>
+        <!-- Scroll Arrow Btn  -->
+    </div id="arrow-Btn"><a href=""><i id="scrollbtn" class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <!-- Home Section  -->
+    <div id="home">
+
+        <div class="home-text">
+            <h3>Hello, It's Me </h3>
+            <h1 class="horizontal-animation">Sagar Khambe..</h1>
+            <span class="container1">
+                <p class="text">I'm a Full Stack Developer... </p>
+        
+            </span>
+            <div class="home-icon">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/sagar-khambe-b5443a313/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div id="btn">
+                <a href="#about-section"><button class="home-btn">More About Me...</button></a>
+            </div>
+        </div>
+
+        <div class="home-img  border-rotate-wrapper ">
+            <img src="./img10.png" alt="" class="border-rotate-animation">
+        </div>
+    </div>
+
+    <!-- About section  -->
+    <div id="about-section">
+        <div class="about-img">
+            <img src="./img8.jfif" alt="">
+        </div>
+        <div class="about-text">
+            <div>
+                <!-- <h1>About <span style="color: white;"> Me</span></h1> -->
+                <h1>About Me</h1>
+                <span class="container1">
+                    <h3 class="text">Full Stack Developer !</h3>
+                </span>
+                <p>I'm a Bsc.IT graduate from DBJ College Chiplun ,Rtnagiri
+                    ,Mumbai University with a CGPA of 8.4
+                    Looking for opportunities in Software Engineering ,Frontend Developer roles where I can utilize my
+                    skills in developing seamless and captivating web designs
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sit culpa facere vero alias nam
+                    officiis! Consequatur cupiditate debitis voluptatem odio ut! Iusto iste at voluptate non recusandae
+                    ex pariatur</p>
+
+                <a href="../files/SAGAR KHAMBE 2024 RESUME.pdf" target="_blank"><button onclick="">Download
+                        CV</button></a>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Services-section  -->
+    <div class="services-section" id="Projects">
+        <h1>My <span style="color: aqua;"> &nbsp;Projects</span> </h1>
+
+        <div class="srvices-cards">
+
+            <div class="services-card" id="design">
+                <i class="fa-solid fa-code"></i>
+                <h3>Ui/UX Design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, animi repudiandae distinctio saepe
+                    ratione possimus eaque magnam velit, quia ad ut aut enim. Reiciendis excepturi ad corporis accusamus
+                    beatae ipsum?</p>
+                <button type="button" onclick="">Learn More</button>
+            </div>
+            <div class="services-card" id="Web-design">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quisquam modi dolor quasi hic
+                    consequatur soluta, reiciendis, dolore qui eligendi, voluptatem architecto sunt repudiandae laborum
+                    consectetur officiis eius? Dolore, quis.</p>
+                <button type="button" onclick="">Learn More</button>
+            </div>
+            <div class="services-card" id="App-Design">
+                <i class="fa-brands fa-apple"></i>
+                <h3>App Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ea obcaecati dolores corporis
+                    tempora voluptatum quae illo vero magnam, fuga consequuntur, incidunt maiores culpa tempore.
+                    Soluta accusantium quis accusamus deleniti.</p>
+                <button type="button" onclick="">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skill-Section  -->
+    <div class="container" id="skill-section">
+
+        <div class="Skill-Section">
+            <h1 class="skill-h1">My Skill</h1>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name"> <i class="fa-brands fa-html5"></i> HTML</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"> <i class="fa-brands fa-css3-alt"></i> CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"> <i class="fa-brands fa-js"></i> JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact-section  -->
+    <div class="contact-section" id="contact">
+        <div class="contact-part">
+            <!-- <h1>Contact <span style="color: red;">Me</span> </h1> -->
+            <h1> Contact Me </h1>
+            <p><i class="fa-solid fa-paper-plane contact-icon1"></i>khambesagar108@gmail.com</p>
+            <p><i class="fa-duotone fa-solid fa-square-phone contact-icon1"></i>+91 8698859981</p>
+
+            <div class="contact-icon">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/sagar-khambe-b5443a313/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="../files/SAGAR KHAMBE 2024 RESUME.pdf" target="_blank"><button onclick="">Download CV</button></a>
+        </div>
+
+        <div class="email-part">
+            <form action="https://formspree.io/f/xanwlogz" method="post">
+
+                <input name="name" type="text" id="username" placeholder="Your Name" required>
+                <input name="email" type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Enter Your password " required>
+
+                <textarea name="message" id="msg" rows="8" placeholder="Your Message"></textarea>
+
+                <div id="submit-btn" style="display: flex;">
+                    <button type="submit">Submit</button>
+                    <button type="reset">reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer-Srection  -->
+    <div class="footer">
+        <p>&copy; SAGAR KHAMBE </p>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f f-icon"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp f-icon"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram f-icon"></i></a>
+    </div>
+
+
+    
+</body>
+
+</html>

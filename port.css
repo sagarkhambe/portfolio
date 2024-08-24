@@ -1,0 +1,1160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+:root{
+    --background-color : #000;
+    --text-color:#999;
+    --title-color: #fff
+
+}
+.dark-theme{
+    --background-color : #fff;
+    --text-color:#555;
+    --title-color: #000
+}
+body{
+ background: var(--background-color);
+ color: var(--text-color);
+ transition: background 0.8s, color 0.8s;
+}
+/* .dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+#arrow-Btn{
+    /* position: absolute; */
+}
+#mode-btn{
+    padding: 10px;
+    border: 2px solid #01a3a4 ;
+    /* background-color: #01a3a4;  */
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    color: #01a3a4;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+
+}
+#mode-btn:hover{
+    font-weight: bold;
+    transition: background 1.6s;
+    background-color: #01a3a4;
+    color: black;
+    cursor: pointer;
+}
+#scrollbtn {
+    padding: 10px;
+    border: 2px solid #01a3a4;
+    /* background-color: #3498db;  */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: #01a3a4;
+    border-radius: 50%;
+    /* text-align: center; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    display: none;
+}
+
+#scrollbtn:hover {
+    font-weight: bold;
+    /* box-shadow: 1px 1px 12px 5px #3498db; */
+    background-color: #01a3a4;
+    color: black;
+    cursor: pointer;
+    transition: background 1.6s;
+}
+
+#header {
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    border-bottom: 3px solid rgb(6, 179, 247);
+
+}
+
+#line {
+    color: aliceblue;
+}
+
+.logo {
+    color: white;
+    padding: 0 20px;
+    cursor: pointer;
+}
+   
+
+/* ... Hamburger Menu sidebar..  */
+nav #toggle-btn i {
+    display: none;
+    /* display: inline-block; */
+    padding: 10px 20px;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav #toggle-btn a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(8, 128, 128);
+    /* padding-right: 50px; */
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+
+
+}
+
+nav ul li:hover {
+    background-color: #00e1ff;
+    transition: 1.5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+nav button {
+    /* margin: 20px 0; */
+    padding: 8px 15px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-color: white;
+    box-shadow: 1px 1px 25px white inset;
+}
+
+nav button:hover {
+    background-color: red;
+    border-color: red;
+    box-shadow: 1px 1px 25px red inset;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+/* ............Dropdown-Section......... */
+.dropdown-menu {
+    display: none;
+    transition: 2.5s;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    transition: 2.5s;
+    /* background-color: #00e1ff; */
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: white;
+    transition: 2.5s;
+}
+
+.dropdown-menu button {
+    background-color: red;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    padding: 5px 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 2.5s;
+}
+
+
+
+/* ...........Home sesction .... */
+#home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    padding: 12px 10%;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+    /* box-shadow: 0px 0px 50px rgb(0, 195, 255); */
+    background-size: cover;
+    background-position: center;
+    /* background-color: black; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../images/img2.jpg); */
+
+}
+
+.home-text {
+    margin-top: 70px;
+    /* background-color: #00e1ff; */
+    padding-left: 20px;
+}
+
+.home-img {
+    margin-top: 70px;
+}
+
+.home-text h3 {
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+.home-text h1 {
+    font-size: 50px;
+}
+
+.home-text p {
+    font-size: 25px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.home-img {
+
+    display: grid;
+    justify-content: center;
+}
+
+.home-img img {
+    width: 300px;
+    height: 350px;
+    /* border: 12px solid white; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 5px rgb(0, 195, 255);
+    /* background-color: aliceblue; */
+}
+
+.home-icon .fa-facebook-f,
+.fa-linkedin-in,
+.fa-instagram,
+.fa-twitter {
+    border: 3px solid;
+    padding: 9px;
+    margin: 5px;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 19px;
+
+}
+
+.home-icon a {
+    color: rgb(0, 174, 255);
+}
+
+.home-icon a i:hover {
+    color: rgb(47, 255, 116);
+    box-shadow: 1px 1px 12px rgb(255, 47, 175);
+    font-weight: bold;
+    background-color: #3498db;
+    color: black;
+    transition: 1.0s;
+}
+
+
+
+.home-btn {
+    padding: 9px 15px;
+    margin: 19px 0px;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+    font-size: 15px;
+    border-color: white;
+    cursor: pointer;
+}
+
+#btn button {
+    color: white;
+    border: none;
+    margin: 30px 0;
+    background: linear-gradient(50deg, rgb(204, 0, 255), rgb(255, 0, 179), rgb(0, 183, 255));
+}
+
+#btn button:hover {
+    /* background: transparent; */
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    box-shadow: 1px 1px 30px blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ........About Section..........  */
+#about-section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 40%;
+
+    align-content: center;
+    padding: 0px 10%;
+    /* background-color: black;
+    color: white; */
+    /* background:linear-gradient(90deg,hsl(43, 30%, 95%),rgb(240, 186, 223),rgb(225, 228, 225)); */
+
+}
+
+.about-text {
+    /* background-color: rgb(172, 230, 184); */
+    padding: 20px;
+    display: grid;
+    align-items: center;
+}
+
+.about-text h1 {
+    /* margin-bottom: 100px 0; */
+    /* background-color: #f700ff; */
+    color: rgb(0, 179, 250);
+    letter-spacing: 1.5px;
+}
+
+.about-text h3 {
+    margin: 20px 0;
+    /* background-color: #7ad2ec; */
+}
+
+.about-text p {
+    margin: 0px 0px;
+    font-size: 17px;
+    font-style: oblique;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-img {
+    /* background-color: rgb(56, 59, 236); */
+    display: grid;
+    align-items: center;
+}
+
+.about-img img {
+    width: 400px;
+    box-shadow: 0px 0px 20px 5px white;
+    border-radius: 15px;
+}
+
+.about-text button {
+    padding: 7px 12px;
+    margin: 19px 0px;
+    border: none;
+    outline: none;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+    font-size: 15px;
+    background: rgb(4, 80, 110);
+    color: white;
+    cursor: pointer;
+}
+
+.about-text button:hover {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    /* background-color: transparent; */
+    box-shadow: 1px 1px 12px red;
+    /* background: linear-gradient(90deg,
+#ff0000,#ff7300,#fffB00,#48ff00,
+#00ffd5,#002bff,#ff00c8,#ff0000); */
+}
+
+/* .......services-section */
+
+.services-section {
+    width: 100%;
+    height: 100vh;
+    padding: 12px 10%;
+    /* background-color: black;
+    color: white; */
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+    /* box-shadow: 0px 0px 50px rgb(0, 195, 255); */
+}
+
+.services-section h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.srvices-cards {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    cursor: pointer;
+    /* align-items: center; */
+    /* margin-top: 70px; */
+    /* background-color: aqua; */
+}
+
+.services-card {
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 19px 3px #f700ff;
+}
+
+.services-card:hover {
+   
+}
+.services-card:hover{
+    box-shadow: 1px 1px 19px 3px blue inset;
+    /* background-color: rgb(214, 214, 243); */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out  ;
+  }
+  .services-card:hover {
+    transform: scale(1.1);
+  }
+.srvices-cards i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: aqua;
+}
+
+.srvices-cards h3 {
+    padding: 10px 0;
+}
+
+.srvices-cards button {
+    margin: 20px 0;
+    padding: 5px 10px;
+    letter-spacing: 1.25px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: aqua;
+    color: rgb(12, 193, 248);
+    cursor: pointer;
+}
+
+.srvices-cards button:hover {
+    box-shadow: 1px 1px 19px skyblue;
+    font-weight: bold;
+}
+
+/* ......Contact-section */
+
+.contact-section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    /* background-color: black;
+    color: white; */
+    box-shadow: 0px 0px 20px #3498db inset;
+;
+}
+
+.contact-part {
+    padding: 20px;
+    /* background-color: aqua; */
+}
+
+.contact-part p {
+    padding: 15px 0;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.contact-part h1 {
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+    color: red;
+}
+
+.contact-icon .fa-facebook-f,
+.fa-whatsapp,
+.fa-instagram,
+.fa-twitter {
+    border: 3px solid;
+    padding: 9px;
+    margin: 5px;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.contact-icon a {
+    color: rgb(0, 174, 255);
+}
+
+.contact-icon a i:hover {
+    color: greenyellow;
+    box-shadow: 1px 1px 20px rgb(12, 219, 22);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-part button {
+    margin: 20px 0;
+    padding: 8px 15px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: red;
+    border-color: red;
+    /* color: white; */
+    text-decoration: none;
+    transition: .5s;
+    
+}
+
+.contact-part a button {
+    text-decoration: none;
+}
+
+.contact-part button:hover {
+    /* background-color: transparent; */
+    box-shadow: 1px 1px 30px red;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+
+.email-part form {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* background-color: #00e1ff; */
+}
+
+.email-part input {
+    width: 500px;
+    padding: 8px;
+    margin: 15px;
+    /* margin-left: 70px; */
+    border-radius: 5px;
+    background-color: #363636;
+    color: white;
+}
+textarea {
+    width: 500px;
+    margin: 20px;
+    /* margin-left: 70px; */
+    border-radius: 5px;
+    background-color: #363636;
+    color: white;
+}
+
+.contact-part .contact-icon1 {
+    color: #00e1ff;
+    padding-right: 10px;
+}
+
+#submit-btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-part form button {
+
+    margin: 20px;
+    border-radius: 5px;
+    padding: 6px 25px;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+    background-color: red;
+    border-color: red;
+    /* color: white; */
+}
+
+.email-part button:hover {
+    box-shadow: 1px 1px 30px red;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    transition: .5s;
+}
+
+
+/*.............. Skill-Section ........ */
+
+
+.Skill-Section {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.849)), url(../images/img3.jpeg); */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-h1 {
+    /* background-color: #f700ff; */
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid white;
+
+}
+
+.skills {
+    width: 700px;
+    height: 40vh;
+    padding: 10px 20px;
+    background-color: black;
+    box-shadow: 1px 1px 12px white;
+}
+
+.fa-html5 {
+    color: red;
+}
+
+.fa-css3-alt {
+    color: rgb(0, 102, 255);
+}
+
+.fa-js {
+    color: yellow;
+}
+
+.skill-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 20px 0;
+}
+
+.skill-bar {
+    height: 14px;
+    background: white;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background-color: #54caee;
+    border-radius: 3px;
+    position:sticky;
+    animation: fillBars 5.5s infinite;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: rgb(48, 240, 106);
+    border-radius: 3px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #0cdf3a;
+    top: -20px;
+    right: 0;
+    transform: translate(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+/* ........................................  */
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+/* ......Footer section....... */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    /* margin: 0px 25px; */
+    color: rgb(11, 190, 235);
+    background-color: black;
+    font-size: 15px;
+}
+.footer a i{
+    font-size: 19px;
+    border: none;
+    padding: 6px;
+    margin: 5px 5px;
+    color: #00e1ff;
+    cursor: pointer;
+
+}
+.footer a i:hover{
+    font-weight: bold;
+    color: #f700ff;
+    font-size: 25px;
+}
+
+
+/* Resposive navbar..On ( 768 px).. */
+
+@media (max-width: 768px) {
+    #header {
+        position: relative;
+    }
+
+    #nav-bar ul li {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+    
+
+    nav #toggle-btn i {
+        display: block;
+        padding: 10px;
+        color: red;
+        margin-right: 15px;
+        font-size: 30px;
+        /* background-color: #00e1ff; */
+    }
+    #mode-btn{
+        padding: 5px;
+        position:absolute;
+        font-size: 19px;
+        border: none;
+    }
+    #home {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        /* margin: auto; */
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+
+        /* background-color: rgb(14, 221, 7); */
+        /* color: red; */
+    }
+
+
+    .home-text {
+        margin-top: auto;
+    }
+
+    .home-img {
+        margin-top: auto;
+        /* background-color: antiquewhite; */
+    }
+
+    .home-text h3 {
+        font-size: 25px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .home-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
+        display: grid;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .home-text p {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    #btn {
+        display: grid;
+        justify-content: center;
+
+    }
+
+
+    .home-img img {
+        border-radius: 50%;
+        width: 220px;
+        height: 200px;
+        border: 12px solid white;
+        box-shadow: 0px 0px 20px 6px rgb(0, 195, 255);
+        /* background-color: aliceblue; */
+    }
+
+    /* ...............About Section................  */
+    #about-section {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 30px 10%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .about-text {
+        /* background-color: rgb(172, 230, 184); */
+        padding: 20px;
+        display: grid;
+        align-items: center;
+    }
+
+    .about-text h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-img img {
+        display: none;
+    }
+
+    /* .................Services Sectioin.........................  */
+
+    .services-section {
+        width: 100%;
+        height: auto;
+        padding: 12px 10%;
+        /* box-shadow: 0px 0px 50px rgb(0, 195, 255); */
+    }
+
+    .srvices-cards {
+        display: grid;
+        grid-template-columns: auto;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-top: 0px;
+        /* background-color: aqua; */
+    }
+
+    .services-card {
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow: 1px 1px 19px 3px #f700ff;
+        margin: 20px 0px;
+    }
+
+    .srvices-cards h3 {
+        padding: 10px 0;
+        color: #f700ff;
+    }
+
+    /* ....................Contact Section......................  */
+    .contact-section {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 10%;
+    }
+
+    .contact-part {
+        padding: 20px;
+        /* background-color: aqua; */
+        display: grid;
+        justify-content: center;
+    }
+
+    .contact-part p {
+        padding: 15px 0;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .contact-part h1 {
+
+        border-bottom: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: red;
+    }
+
+    /* ........... Skill Section.......... */
+    .Skill-Section {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.849)), url(../images/img3.jpeg); */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-h1 {
+        font-size: 35px;
+        /* background-color: #00e1ff; */
+
+    }
+    .skill-name {
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(230, 11, 11);
+        margin: 20px 0;
+    }
+    .skills {
+        width: 500px;
+        height: 800px;
+        /* max-width: 60px; */
+        height: 40vh;
+        padding: 0px 20px;
+        background: transparent;
+        box-shadow: none;
+
+    }
+
+
+    .skill-bar {
+        height: 14px;
+        /* background: white; */
+        border-radius: 3px;
+        
+    }
+
+    .skill-per {
+        height: 14px;
+        background-color: #54caee;
+        border-radius: 3px;
+        position: sticky;
+        animation: fillBars 4.5s;
+        
+    }
+
+    .skill-per::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background-color: rgb(48, 240, 106);
+        border-radius: 3px;
+        font-size: 12px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%); 
+    }
+
+    .skill-per::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #0cdf3a;
+        top: -20px;
+        right: 0;
+        transform: translate(50%) rotate(45deg);
+}
+}
+/* ...............................  */
+
+/* ...Rersponsive on ( 425px )... */
+
+@media (max-width: 425px) {
+
+    #nav-bar ul li {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    nav #toggle-btn i {
+        font-size: 20px;
+    }
+
+    #scrollbtn {
+ 
+        font-size: 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .services-section h1 {
+        font-size: 28px;
+    }
+
+    .skill-h1 {
+        font-size: 28px;
+    }
+
+    /* ..contact part... */
+    .email-part input {
+        width: 300px;
+        padding: 6px;
+        margin: 20px;
+    }
+
+    textarea {
+        width: 300px;
+        margin: 20px;
+    }
+
+    /* ........... Skill Section.......... */
+
+    .skill-h1 {
+        font-size: 29px;
+    }
+
+    .skills {
+        width: 300px;
+        height: 800px;
+        height: 40vh;
+        padding: 0px 20px;
+    }
+
+    .skill-name {
+        font-size: 15px;
+    }
+
+    .contact-part a button {
+        padding: 5px 7px;
+        text-decoration: none;
+    }
+}
+
+/* ............Responsive.... ( 320px ) */
+@media (max-width: 320px) {
+    #about-section {
+        width: 100%;
+        /* height: auto; */
+        display: grid;
+        grid-template-columns: auto;
+        padding: 20px;
+        justify-content: center;
+        align-content: center;
+        /* background-color: #00e1ff; */
+    }
+    .about-text p {
+        width: 100%;
+        /* background-color: rgb(172, 230, 184); */
+        padding: 15px;
+        margin: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .home-text p {
+        font-size: 16px;
+        padding: 10px 5px;
+        letter-spacing: 0px;
+    }
+    .about-text .text {
+        display: flex;
+        justify-content: center;
+        font-size: 19px;
+    }
+    .home-icon .fa-facebook-f,
+    .fa-whatsapp,
+    .fa-instagram,
+    .fa-twitter {
+        font-size: 12px;
+
+    }
+
+    /* ... .contact-section..  */
+
+    .contact-icon .fa-facebook-f,
+    .fa-whatsapp,
+    .fa-instagram,
+    .fa-twitter {
+        font-size: 12px;
+
+    }
+
+    .contact-part a button {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 7px;
+    }
+
+    /* ..contact part... */
+    .email-part input {
+        width: 250px;
+        padding: 6px;
+        margin: 20px;
+    }
+
+    textarea {
+        width: 250px;
+        margin: 20px;
+    }
+
+
+}
+
+/* @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.logo {
+    font-size: 2em;
+    animation: fadeInOut 3s ease-in-out infinite;
+} */
